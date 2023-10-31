@@ -35,6 +35,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	const binary_tree_t *temp = tree;
 	int depth_left = 0;
 
+	if (tree == NULL)
+		return (0);
+
 	while (temp->left)
 	{
 		depth_left += 1;
